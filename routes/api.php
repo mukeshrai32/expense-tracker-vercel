@@ -11,7 +11,7 @@ Route::get('/user', function (Request $request) {
 
 Route::middleware('api')->group(function () {
 
-    Route::get('login', [LoginController::class, 'index'])->name('login');
+    // Route::get('login', [LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'login']);
 
 });
